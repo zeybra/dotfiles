@@ -1,0 +1,17 @@
+- clean: ['~', '~/.oh-my-zsh/custom/', '~/.oh-my-zsh/custom/plugins']
+
+- shell:
+    - [bash pre-install.sh, Running pre installation script]
+
+- link:
+    ~/.vim: vim/
+    ~/.zsh: zsh
+    ~/.zshrc:
+      force: true
+      path: zshrc
+
+- shell:
+    - [vim +PlugInstall +qall, Install Plugged plugins]
+
+- link:
+    ~/.vimrc: vimrc

@@ -1,0 +1,11 @@
+#user1 - default account
+Host github.com
+  HostName github.com
+  User user1 
+  IdentityFile ~/.ssh/user1
+
+#user2 account
+Host github.com-user2
+  HostName github.com
+  User user2
+  IdentityFile ~/.ssh/user2
