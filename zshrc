@@ -93,3 +93,9 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 plugins=($plugins zsh-syntax-highlighting)
+
+
+git_aliases_help() {
+  grep "^alias" ~/.oh-my-zsh/plugins/git/git.plugin.zsh | sed 's/alias //g' | column -t -s'='
+}
+
